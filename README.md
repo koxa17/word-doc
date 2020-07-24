@@ -1,4 +1,5 @@
-Create Word Doc
+### Create Word Doc
+
 Настройка проекта
 
 0. Создания репозитория и первый commit
@@ -19,9 +20,9 @@ Create Word Doc
    1. Создание файлы webpack.sonfig.js
    2. Настройка
    3. Установка плагинов
-      Если не обновляется html удалить hot из devServer
-      После установки eslint создать 2 файла "src" .eslintignore .eslintrc
-      Также установить правила от google
+      1. Если не обновляется html удалить hot из devServer
+      2. После установки eslint создать 2 файла "src" .eslintignore .eslintrc
+      3. Также установить правила от google
 
 3. Создать папку с рабочими файлами "src/" - develepers
 
@@ -32,3 +33,12 @@ Create Word Doc
 4. Установить normalize.css
 
 5. Создать 2 файла variable & mixin scss импортироваить их во все scss файлы
+
+   1. На каждый компонент создать свой scss
+
+6. Готовую верстку закинуть в assets разбив на страницы
+
+7. Создаем структру JS
+   1. Создать 2 папки core & components
+   2. в core поместить глобальные классы
+   3. в components создать папку для каждого компонента
