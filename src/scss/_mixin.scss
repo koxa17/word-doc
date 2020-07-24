@@ -1,0 +1,45 @@
+@mixin border($color: #dadce0) {
+  border: 1px solid $color;
+  border-radius: 5px;
+}
+
+@mixin button($color: green) {
+  height: 24px;
+  min-width: 24px;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.7);
+  & span {
+    font-size: 18px;
+  }
+  &:active,
+  &.active {
+    color: $color;
+  }
+  &:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+}
+
+@mixin clear-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin ruler__top-margin() {
+  display: inline-block;
+  background: #e8eaed;
+  height: 100%;
+  z-index: 9;
+}
+
+@mixin ruler__left-margin() {
+  display: inline-block;
+  background: #e8eaed;
+  width: 100%;
+  z-index: 2;
+}

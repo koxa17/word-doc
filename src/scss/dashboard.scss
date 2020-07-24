@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'mixin';
+.db {
+    max-width: 690px;
+    margin: 0 auto;
+    &__title {
+        text-align: center;
+    }
+}
+
+.db__create {
+    width: 100%;
+    background-color: rgba($color: #f1f3f4, $alpha: 1);
+    padding: 1.5rem;
+    .create__paragraph {
+        padding: 0 0 15px 5px;
+        font-size: 1rem;
+    }
+    & .new-file {
+        width: 120px;
+        height: 155px;
+        background: #fff;
+        @include border();
+        &:hover {
+            @include border(#679fff);
+        }
+        &__img {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+.db__last-file {
+    padding: 1.5rem 0;
+    & .last-file__title {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+    & .card__doc {
+        display: flex;
+        flex-wrap: wrap;
+        & .card {
+            width: 210px;
+            @include border();
+            margin: 0 20px 20px 0;
+            &:hover {
+                @include border(#679fff);
+            }
+            & .doc {
+                height: 180px;
+                border-bottom: 1px solid #dadce0;
+                background-color: rgba($color: #dadce0, $alpha: .2);
+            }
+            & .info {
+                height: 75px;
+                padding: 16px 14px;
+                display: flex;
+                flex-direction: column;
+                &__date {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
