@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import '~normalize.css';
+@import 'dashboard';
+@import 'header';
+@import 'ruler';
+@import 'toolbar';
+@import 'doc';
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.word {
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: 0.8rem;
+}
+
+.container {
+  max-width: 804px;
+  margin: 0 auto;
 }
