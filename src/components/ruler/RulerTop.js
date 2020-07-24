@@ -2,6 +2,6 @@ import { WordComponent } from '../../core/WordComponents'
 
 export class RulerTop extends WordComponent {
   toHTML() {
-    console.log('Ruler-top')
+    return '<h1>Ruler-Top</h1>'
   }
 }
